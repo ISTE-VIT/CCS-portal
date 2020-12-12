@@ -8,3 +8,21 @@ body{
 }
 
 .navbar{border-bottom:8px solid #40C0FF;padding-bottom:10px};
+
+.form-group{
+  border: 2px solid #CDCECE;
+border-radius: 10px;
+opacity: 1;
+position: relative;
+}
+.form-control{
+  padding-left: 38px;
+}
+#icon {
+  padding: 12px;
+  color: white;
+
+top:0px;
+position:absolute;
+}
+
