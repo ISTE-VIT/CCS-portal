@@ -1,0 +1,10 @@
+body{
+   
+    font-family: 'Roboto';
+    color: #484A4B !important;
+    background: url('../img/ccsportal_bg.png');
+    background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.navbar{border-bottom:8px solid #40C0FF;padding-bottom:10px};
