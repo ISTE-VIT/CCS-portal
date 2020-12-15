@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
   <!-- Stylesheet for Custon CSS -->
@@ -16,58 +17,79 @@
   <title>CCS</title>
 
 </head>
+
 <body>
-    <nav class="navbar navbar-dark bg-dark shadow-lg">
-        <div class="container-fluid">
-          
-          <div class="navbar-left ml-3 mb-0"><img id="logo" width="80%"src="./assets/img/Logo.png"></div>
-        </div>
-      </nav>
-      <br>
-      <div class="container col-12 col-lg-7 col-md-10 col-sm-10 col-xs-7  p-4 pt-5 pd-5 mt-5   shadow-lg"  style="background-color: white; border-bottom:6px solid #40C0FF;padding-bottom:10px;">
-          <h4 style="padding-left: 20px;"><b>Sign Up</b></h4>
-         <br>
-         <form >
-            <div class="form-row pl-3 pr-3 pb-2">
-              <div class="form-group col-md-6 ">
-                
-                <input type="text" class="form-control" id="Name" placeholder=" Name">
-                <img id="icon" src="./assets/img/icon/person-fill.png">
-              </div>
-              <div class="form-group col-md-6">
-               
-                <input type="text" class="form-control " id="Reg_No" placeholder="Registration Number" >
-                <img id="icon" src="./assets/img/icon/numeric.png" style="padding-top:13px;padding-left:10px">
-              </div>
-            </div>
-            <div class="form-row pl-3 pr-3 pb-2">
-                <div class="form-group col-md-6">
-                 
-                  <input type="email" class="form-control" id="mail" placeholder="VIT Mail">
-                  <img id="icon" src="./assets/img/icon/email_round.png" >
-                </div>
-                <div class="form-group col-md-6">
-                  
-                  <input type="text" class="form-control" id="Mobile" placeholder="Mobile Number"  >
-                  <img id="icon" src="./assets/img/icon/mobile.png "style="padding-left:14px" >
-                </div>
-              </div>
-              <div class="form-row pl-3 pr-3  pb-2">
-                <div class="form-group col-md-6">
-                 
-                  <input type="password" class="form-control" id="Password" placeholder="Password" >
-                  <img id="icon" src="./assets/img/icon/asterisk.png" >
-                </div>
-            
-              </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary" style="background-color: #39ADE6; border-color: #39ADE6;;">Sign Up</button>
-            </div>  
-            
-          </form>
-    
-       
+  <nav class="navbar navbar-dark bg-dark shadow-lg">
+    <div class="container-fluid">
+
+      <div class="navbar-left ml-3 mb-0"><img id="logo" width="80%" src="./assets/img/Logo.png"></div>
     </div>
+  </nav>
+  <br>
+  <div class="container col-11 col-lg-7 col-md-10 col-sm-10   p-4 pt-5 pd-5 mt-5   shadow-lg"
+    style="background-color: white; border-bottom:6px solid #40C0FF;padding-bottom:10px;">
+    <h4 style="padding-left: 30px;"><b>SIGN UP</b></h4>
+    <br>
     
+    <form>      
+    <div class="form-row">
+      <div class="form-column pl-3 pr-3 pb-2 col-md-7">
+      
+        <div class="form-group col-md-10 ">
+
+          <input type="text" class="form-control" id="Name" placeholder=" Name">
+          <img id="icon" src="./assets/img/icon/person-fill.png">
+        </div>
+        <div class="form-group col-md-10">
+
+          <input type="text" class="form-control " id="Reg_No" placeholder="Registration Number">
+          <img id="icon" src="./assets/img/icon/numeric.png" style="padding-top:13px;padding-left:10px">
+        </div>
+        <div class="form-group col-md-10">
+
+          <input type="email" class="form-control" id="mail" placeholder="VIT Mail">
+          <img id="icon" src="./assets/img/icon/email_round.png">
+        </div>
+        <div class="form-group col-md-10">
+
+          <input type="text" class="form-control" id="Mobile" placeholder="Mobile Number">
+          <img id="icon" src="./assets/img/icon/mobile.png " style="padding-left:14px">
+        </div>
+
+        <div class="form-group col-md-10">
+
+          <input type="password" class="form-control" id="Password" placeholder="Password">
+          <img id="icon" src="./assets/img/icon/asterisk.png">
+        </div>
+
+      </div>
+      <div class="form-column pl-4 pr-3 col-md-5">
+        <h5>Tick your preffered domain(s):</h5>
+        <br>
+      <div class="form-check ">
+        <input type="checkbox" class="form-check-input" id="tech">
+        <label class="form-check-label" for="exampleCheck1">Technical</label>
+      </div>
+      <div class="form-check ">
+        <input type="checkbox" class="form-check-input" id="management">
+        <label class="form-check-label" for="exampleCheck1">Management</label>
+      </div>
+      <div class="form-check ">
+        <input type="checkbox" class="form-check-input" id="design">
+        <label class="form-check-label" for="exampleCheck1">Design</label>
+      </div>
+      
+    
+      <div class="text-center pt-4 mr-3">
+        <button type="submit" class="btn btn-primary" style="background-color: #39ADE6; border-color: #39ADE6;;">Sign
+          Up</button>
+      </div>
+    </div>
+  </div>
+
+    </form>
+  </div>
+
 </body>
+
 </html>
