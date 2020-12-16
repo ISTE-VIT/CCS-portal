@@ -1,0 +1,339 @@
+body{
+  background-image: url("spikes.png");
+  font-family: 'Roboto', sans-serif;
+}
+
+nav{
+  background-color: #403939;
+  border-bottom: 10px solid #40C0FF;
+  padding: 0 !important
+}
+
+nav img{
+  margin-top: 0;
+  top: 0;
+  width: 18rem;
+  height: auto;
+}
+
+.quiz_box{
+  box-shadow: 0px 5px 36px #00000029;
+  height: auto;
+  width: 65%;
+  margin-left: 17%;
+  margin-top: 3%;
+  background-color: #fff;
+  border-bottom: 10px solid #40C0FF;
+}
+
+
+.ques_number{
+  color: #39ADE6;
+  padding-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 5%;
+}
+
+.question{
+  display: inline;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.timer_sec{
+  display: inline-block;
+  color: #39ADE6;
+  background: #fff;
+  border-radius: 1rem;
+  width: auto;
+  text-align: center;
+  margin-left: 55%;
+  font-size: 1.7rem;
+}
+
+.que_text{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.que_text span{
+  font-weight: 600;
+  display: inline-block;
+  color: #484A4B;
+  font-size: 1.5rem;
+  width: 75%;
+  text-align: left;
+}
+
+
+.option{
+  box-shadow: 0px 0px 10px #00000029;
+  width: 72%;
+  height: auto;
+  margin-left: 14%;
+  margin-bottom: 2%;
+}
+
+.option_txt{
+  font-weight: 400;
+  color: #39ADE6;
+  margin-top: 8%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.option_alph{
+  display: inline;
+  height: 1.8rem;
+  margin-left: 2%;
+  color: #39ADE6;
+  margin-right: 2%;
+}
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+footer button{
+  border-radius: 8px;
+  border: 1px;
+  font-size: 1.3rem;
+  width: auto;
+  height: 3vw;
+  color: #fff;
+}
+.end_button{
+  background: #FC4E4E;
+  margin-left: 18%;
+}
+
+.next_btn{
+  background: #39ADE6;
+  margin-left: 24vw;
+}
+
+.option.selected{
+  background-color: grey;
+}
+
+.option.disabled{
+  pointer-events: none;
+}
+
+.result_box{
+  box-shadow: 0px 5px 36px #00000029;
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-top: 12%;
+  background-color: #fff;
+  border-bottom: 10px solid #40C0FF;
+}
+
+@media only screen and (max-width:1400px){
+
+  .quiz_box{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+
+  .timer_sec{
+    margin-left: 49%;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width:1150px){
+
+  .quiz_box{
+    margin-top: 6%;
+  }
+
+  .timer_sec{
+    margin-left: 47%;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width:1000px){
+
+  .quiz_box{
+    width: 75%;
+    margin-left: 12%;
+  }
+
+  .timer_sec{
+    margin-left: 44%;
+    font-size: 1.7rem;
+  }
+
+  footer button{
+    height: 3.5vw;
+  }
+}
+
+
+@media only screen and (max-width:900px){
+
+  .quiz_box{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .timer_sec{
+    margin-left: 36%;
+    font-size: 1.7rem;
+  }
+
+  footer button{
+    height: 3.7vw;
+  }
+}
+
+@media only screen and (max-width:800px){
+  footer button{
+    height: 4.2vw;
+  }
+}
+
+@media only screen and (max-width:730px){
+
+  .quiz_box{
+    margin-top: 8%;
+  }
+
+  .timer_sec{
+    margin-left: 36%;
+    font-size: 1.5rem;
+  }
+
+  .question{
+    font-size: 1.8rem;
+  }
+
+  .que_text span{
+    font-size: 1.1rem;
+  }
+
+  .option_txt{
+    font-size: 1.2rem;
+  }
+
+  footer button{
+    height: 4.9vw;
+  }
+}
+
+@media only screen and (max-width:630px){
+
+  .quiz_box{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 8%;
+  }
+
+  .timer_sec{
+    margin-left: 29%;
+  }
+
+  .question{
+  }
+
+  .que_text span{
+  }
+
+  .option_txt{
+  }
+
+
+  footer button{
+    height: 5.4vw;
+  }
+}
+
+@media only screen and (max-width:530px){
+
+  .quiz_box{
+    margin-top: 9%;
+  }
+
+  .timer_sec{
+    margin-left: 26%;
+  }
+
+  .question{
+  }
+
+  .que_text span{
+  }
+
+  .option_txt{
+  }
+
+
+  footer button{
+    height: 2.2rem;
+  }
+}
+
+@media only screen and (max-width:500px){
+
+  .quiz_box{
+  }
+
+  .timer_sec{
+    margin-left: 27%;
+    font-size: 1.3rem;
+  }
+
+  .question{
+    font-size: 1.6rem;
+  }
+
+  .que_text span{
+    font-size: 0.9rem;
+  }
+
+  .option_txt{
+    font-size: 1rem;
+  }
+  footer button{
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width:440px){
+  .timer_sec{
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .timer_sec{
+    margin-left: 25%;
+    font-size: 1rem;
+  }
+
+  .ques_number{
+    padding-top: 6%;
+  }
+.question{
+  font-size: 1.3rem;
+}
+
+.que_text span{
+  font-size: 0.8rem;
+}
+
+.option_txt{
+  font-size: 0.8rem;
+}
+
+footer button{
+  height: 1.9rem;
+  font-size: 0.8rem;
+}
+}
