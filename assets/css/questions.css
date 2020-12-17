@@ -105,12 +105,12 @@ footer button {
 }
 .end_button {
   background: #fc4e4e;
-  margin-left: 18%;
+  /* margin-left: 18%; */
 }
 
 .next_btn {
   background: #39ade6;
-  margin-left: 24vw;
+  /* margin-left: 24vw; */
 }
 
 /* .option.selected {

@@ -8,12 +8,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/ccslogin.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,20 +21,12 @@
     />
   </head>
   <body>
-    <!-- nav bar -->
+    <header id="header"></header>
+    <script>
+      $('#header').load('./navbar.html')
+    </script>
 
-    <!-- Image and text -->
-    <nav class="navbar">
-      <a href="www.istevit.in">
-        <img
-          src="./assets/img/logo.png"
-          class="d-inline-block align-top"
-          alt=""
-        />
-      </a>
-    </nav>
-
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-sm-12 col-md-12 col-lg">
         <p class="one">Core Committee Selections</p>
         <p class="two">Dare to be different, dare to be ISTE!</p>
@@ -106,6 +96,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
     <script src="./assets/js/firebase.js"></script>
-    <script src="./assets/js/csslogin.js"></script>
+    <script src="./assets/js/ccslogin.js"></script>
   </body>
 </html>
