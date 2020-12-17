@@ -40,3 +40,7 @@ letter-spacing: 0px;
 color: #39ADE6;
 opacity: 1;
 }
+
+li {
+  padding-top: 8px;
+}
