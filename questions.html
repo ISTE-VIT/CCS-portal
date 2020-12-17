@@ -51,28 +51,76 @@
     </nav>
 
     <div class="quiz_box">
-      <header>
-        <div class="ques_number">
-          <div class="question"></div>
-          <div class="timer_sec">05</div>
+      <div class="ques_number">
+        <div class="question">
+          Question
+          <span class="question-count"></span>
         </div>
-      </header>
+        <div class="timer_sec"></div>
+      </div>
+
       <div>
-        <div class="que_text">
+        <div class="que_text container">
           <!-- Here I've inserted question from JavaScript -->
         </div>
         <div class="option_list">
           <!-- Here I've inserted options from JavaScript -->
+          <div class="option">
+            <span class="option_txt">
+              <img class="option_alph" src="/assets/img/A.png" />
+              <span class="optionA"></span>
+            </span>
+          </div>
+          <div class="option">
+            <span class="option_txt">
+              <img class="option_alph" src="/assets/img/B.png" />
+              <span class="optionB"></span>
+            </span>
+          </div>
+          <div class="option">
+            <span class="option_txt">
+              <img class="option_alph" src="/assets/img/C.png" />
+              <span class="optionC"></span>
+            </span>
+          </div>
+          <div class="option">
+            <span class="option_txt">
+              <img class="option_alph" src="/assets/img/D.png" />
+              <span class="optionD"></span>
+            </span>
+          </div>
+        </div>
+        <div class="subjective-answer container">
+          <div class="row justify-content-center">
+            <div class="col col-9">
+              <textarea
+                class="boxsizingBorder"
+                name=""
+                id=""
+                rows="8"
+              ></textarea>
+            </div>
+          </div>
         </div>
       </div>
       <!-- footer of Quiz Box -->
       <footer>
         <button class="end_button">End Test</button>
-        <button class="next_btn">Next Ques</button>
+        <button class="next_btn" style="display: none;">Next Ques</button>
       </footer>
     </div>
 
-    <div class="result_box hide"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-functions.js"></script>
+    <script src="./assets/js/firebase.js"></script>
 
     <script src="./assets/js/questions.js" charset="utf-8"></script>
   </body>

@@ -74,10 +74,13 @@ nav img {
 
 .option_txt {
   font-weight: 400;
-  color: #39ade6;
+  /* color: #39ade6; */
   margin-top: 8%;
   text-align: center;
   font-size: 1.5rem;
+}
+.option_txt.selected {
+  color: #39ade6;
 }
 .option_alph {
   display: inline;
@@ -110,9 +113,9 @@ footer button {
   margin-left: 24vw;
 }
 
-.option.selected {
+/* .option.selected {
   background-color: grey;
-}
+} */
 
 .option.disabled {
   pointer-events: none;
@@ -322,4 +325,11 @@ footer button {
     height: 1.9rem;
     font-size: 0.8rem;
   }
+}
+
+.boxsizingBorder {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
 }
