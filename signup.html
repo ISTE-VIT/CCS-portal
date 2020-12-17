@@ -1,99 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <!-- Bootstrap CSS -->
+    <link
+      defer
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Stylesheet for Custon CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>CCS</title>
+  </head>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <body>
+    <nav class="navbar navbar-dark bg-dark shadow-lg">
+      <div class="container-fluid">
+        <div class="navbar-left ml-3 mb-0">
+          <img id="logo" width="80%" src="./assets/img/main_logo.png" />
+        </div>
+      </div>
+    </nav>
+    <br />
+    <div
+      class="container col-11 col-lg-7 col-md-10 col-sm-10 p-4 pt-5 pb-5 mt-5 shadow-lg"
+      style="background-color: white; border-bottom: 6px solid #40c0ff;"
+    >
+      <h4 style="padding-left: 30px;"><b>SIGN UP</b></h4>
+      <br />
 
-  <!-- Stylesheet for Custon CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>CCS</title>
+      <form id="signup-form">
+        <div class="form-row">
+          <div class="form-column pl-3 pr-3 pb-2 col-md-7">
+            <div class="form-group col-md-10">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <img id="icon" src="./assets/img/icon/person-fill.png" />
+            </div>
+            <div class="form-group col-md-10">
+              <input
+                type="text"
+                class="form-control"
+                id="registrationNumber"
+                placeholder="Registration Number"
+                pattern="20[A-Za-z]{3}[0-9]{4}"
+                required
+              />
+              <img
+                id="icon"
+                src="./assets/img/icon/numeric.png"
+                style="padding-top: 13px; padding-left: 10px;"
+              />
+            </div>
+            <div class="form-group col-md-10">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="VIT GMail"
+                pattern=".+2020@vitstudent.ac.in"
+                required
+              />
 
-</head>
+              <img id="icon" src="./assets/img/icon/email_round.png" />
+            </div>
+            <div class="form-group col-md-10">
+              <input
+                type="text"
+                class="form-control"
+                id="mobile"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}"
+                required
+              />
+              <img
+                id="icon"
+                src="./assets/img/icon/mobile.png "
+                style="padding-left: 14px;"
+              />
+            </div>
 
-<body>
-  <nav class="navbar navbar-dark bg-dark shadow-lg">
-    <div class="container-fluid">
+            <div class="form-group col-md-10">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                required
+                minlength="6"
+              />
+              <img id="icon" src="./assets/img/icon/asterisk.png" />
+            </div>
+          </div>
+          <div class="form-column pl-4 pr-3 col-md-5">
+            <h5>Tick your preffered domain(s):</h5>
+            <br />
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="TechnicalCSE"
+              />
+              <label class="form-check-label" for="TechnicalCSE">
+                Technical(CSE)
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="TechnicalElectrical"
+              />
+              <label class="form-check-label" for="TechnicalElectrical">
+                Technical(Electrical)
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="Management" />
+              <label class="form-check-label" for="Management">
+                Management
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="Design" />
+              <label class="form-check-label" for="Design">Design</label>
+            </div>
 
-      <div class="navbar-left ml-3 mb-0"><img id="logo" width="80%" src="./assets/img/main_logo.png"></div>
+            <div class="text-center pt-3 mr-3">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="background-color: #39ade6; border-color: #39ade6;"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-  </nav>
-  <br>
-  <div class="container col-11 col-lg-7 col-md-10 col-sm-10   p-4  pt-5 pb-5 mt-5   shadow-lg"
-    style="background-color: white; border-bottom:6px solid #40C0FF;">
-    <h4 style="padding-left: 30px;"><b>SIGN UP</b></h4>
-    <br>
-    
-    <form>      
-    <div class="form-row">
-      <div class="form-column pl-3 pr-3 pb-2 col-md-7">
-      
-        <div class="form-group col-md-10 ">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
 
-          <input type="text" class="form-control" id="Name" placeholder=" Name">
-          <img id="icon" src="./assets/img/icon/person-fill.png">
-        </div>
-        <div class="form-group col-md-10">
-
-          <input type="text" class="form-control " id="Reg_No" placeholder="Registration Number">
-          <img id="icon" src="./assets/img/icon/numeric.png" style="padding-top:13px;padding-left:10px">
-        </div>
-        <div class="form-group col-md-10">
-
-          <input type="email" class="form-control" id="mail" placeholder="VIT Mail">
-          <img id="icon" src="./assets/img/icon/email_round.png">
-        </div>
-        <div class="form-group col-md-10">
-
-          <input type="text" class="form-control" id="Mobile" placeholder="Mobile Number">
-          <img id="icon" src="./assets/img/icon/mobile.png " style="padding-left:14px">
-        </div>
-
-        <div class="form-group col-md-10">
-
-          <input type="password" class="form-control" id="Password" placeholder="Password">
-          <img id="icon" src="./assets/img/icon/asterisk.png">
-        </div>
-
-      </div>
-      <div class="form-column pl-4 pr-3 col-md-5">
-        <h5>Tick your preffered domain(s):</h5>
-        <br>
-      <div class="form-check ">
-        <input type="checkbox" class="form-check-input" id="tech-cse">
-        <label class="form-check-label" for="exampleCheck1">Technical(CSE)</label>
-      </div>
-      <div class="form-check ">
-        <input type="checkbox" class="form-check-input" id="tech-ele">
-        <label class="form-check-label" for="exampleCheck1">Technical(Electrical)</label>
-      </div>
-      <div class="form-check ">
-        <input type="checkbox" class="form-check-input" id="management">
-        <label class="form-check-label" for="exampleCheck1">Management</label>
-      </div>
-      <div class="form-check ">
-        <input type="checkbox" class="form-check-input" id="design">
-        <label class="form-check-label" for="exampleCheck1">Design</label>
-      </div>
-      
-    
-      <div class="text-center pt-3 mr-3">
-        <button type="submit" class="btn btn-primary" style="background-color: #39ADE6; border-color: #39ADE6;;">Sign
-          Up</button>
-      </div>
-    </div>
-  </div>
-
-    </form>
-  </div>
-
-</body>
-
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script src="./assets/js/signup.js"></script>
+  </body>
 </html>

@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link
+      defer
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-     <!-- Bootstrap CSS -->
-  <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <!-- Stylesheet for Custon CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>CCS</title>
-
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet for Custon CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>CCS</title>
+  </head>
+  <body>
     <nav class="navbar navbar-dark bg-dark shadow-lg">
-        <div class="container-fluid">
-          
-          <div class="navbar-left ml-3 mb-0"><img id="logo" width="80%"src="./assets/img/main_logo.png"></div>
-          <div class=" navbar-right">
-            <a href="/logout" class=""><img width="50%" height="50%" src="./assets/img/Logout.png"></a></div>
-            
-        
+      <div class="container-fluid">
+        <div class="navbar-left ml-3 mb-0">
+          <img id="logo" width="80%" src="./assets/img/main_logo.png" />
         </div>
-      </nav>
-      <br>
-      <div class="container col-11 col-lg-7 col-md-10 col-sm-10 col-xs-7  p-4 pt-5 mt-2  shadow-lg"  style="background-color: white; border-bottom:6px solid #40C0FF;padding-bottom:10px;">
-          <h4 style="padding-left: 20px;"><b>Instructions :</b></h4>
-         <br>
-              <ol>
-                  <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li><br>
-                  <li>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li><br>
-                  <li>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</li><br>          
-                  <li>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </li><br>
-                </ol>
-    
-       <div class="text-center">
-        <button type="button" class="btn btn-primary" style="background-color: #39ADE6; border-color: #39ADE6;;">Start Test</button>
-    </div>  
+        <div class="navbar-right">
+          <a class="" id="logout">
+            <img width="50%" height="50%" src="./assets/img/Logout.png" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <div
+      class="container col-11 col-lg-7 col-md-10 col-sm-10 col-xs-7 p-4 pt-5 mt-2 shadow-lg"
+      style="
+        background-color: white;
+        border-bottom: 6px solid #40c0ff;
+        padding-bottom: 10px;
+      "
+    >
+      <h4 style="padding-left: 20px;"><b>Instructions :</b></h4>
+      <br />
+      <ol>
+        <li>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </li>
+        <br />
+        <li>
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+        </li>
+        <br />
+        <li>
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+          dolores et ea rebum.
+        </li>
+        <br />
+        <li>
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+          dolores et ea rebum.
+        </li>
+        <br />
+      </ol>
+
+      <div class="text-center">
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="background-color: #39ade6; border-color: #39ade6;"
+          onclick="window.location.href='./questions.html'"
+        >
+          Start Test
+        </button>
+      </div>
     </div>
-    
-</body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script src="./assets/js/instruction.js"></script>
+  </body>
 </html>
