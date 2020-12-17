@@ -37,10 +37,11 @@ window.addEventListener('DOMContentLoaded', () => {
         .doc(auth.currentUser.uid)
         .set(responsesBody)
       alert('Test completed successfully!')
-      auth.signOut()
     } catch (e) {
       console.log(e)
-      alert('some error occured')
+      alert('Test already submitted')
+    } finally {
+      auth.signOut()
     }
   }
   const showQuestion = async (index) => {
@@ -109,6 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  document.querySelector('.end_button').addEventListener('click', finishExam)
   const startTest = () => {
     showQuestion(0)
   }
