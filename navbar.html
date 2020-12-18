@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-dark shadow-lg">
   <!-- <div class="container-fluid"> -->
-  <div class="navbar-left ml-3 mb-0">
+  <div class="navbar-left ml-md-3 mb-0">
     <a href="https://www.istevit.in" target="_blank">
       <img id="logo" width="80%" src="./assets/img/main_logo.png" />
     </a>
@@ -17,5 +17,10 @@
   .navbar {
     border-bottom: 8px solid #40c0ff;
     padding-bottom: 10px;
+  }
+  @media (max-width: 768px) {
+    .navbar-left {
+      margin: auto;
+    }
   }
 </style>

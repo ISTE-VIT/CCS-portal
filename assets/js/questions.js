@@ -1,6 +1,6 @@
 var functions = firebase.functions()
-var initialTimeValue = 500
-var currentTimerValue = 500
+var initialTimeValue = 45
+var currentTimerValue = 45
 let responsesBody = {
   Management: [],
   Design: [],
