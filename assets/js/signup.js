@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
           window.location.href = './instruction.html'
         })
     } catch (e) {
-      alert('Unable to sign up. Please try again!')
+      alert('Unable to sign up. User probably already exists!')
     }
   })
 })
