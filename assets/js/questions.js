@@ -65,6 +65,7 @@ auth.onAuthStateChanged((user) => {
 
           optionList.querySelectorAll('.option').forEach((e) =>
             e.addEventListener('click', () => {
+              deselectOptions()
               e.querySelector('.option_txt').classList.add('selected')
             }),
           )
@@ -138,7 +139,7 @@ auth.onAuthStateChanged((user) => {
         Object.keys(questionsCollection)
           .sort()
           .forEach((domainKey) => {
-            const domainQuestions = questionsCollection[domainKey]
+            const domainQuestions = questionsCollection[domainKey] || []
             domainQuestions.forEach((question) => {
               quest.push({
                 ...question,
@@ -168,7 +169,7 @@ auth.onAuthStateChanged((user) => {
       return selectedOption ? selectedOption.innerText.trim() : null
     }
   } else {
-    window.location.href = 'ccslogin.html'
+    window.location.href = 'index.html'
   }
 })
 window.addEventListener('DOMContentLoaded', () => {})
