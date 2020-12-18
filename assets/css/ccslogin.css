@@ -4,10 +4,37 @@
 }
 
 body {
-  background: url('../img/spikes.png');
+  background: url('../img/ccsportal_bg.png') !important;
 }
 
-nav {
+.shadow {
+  box-shadow: 0px 5px 36px #00000029;
+}
+
+.main-heading {
+  font-size: 4rem;
+}
+
+body .text-primary {
+  color: #39ade6 !important;
+}
+
+.login-panel-card {
+  border-bottom: 8px solid #40c0ff;
+}
+body .btn-primary {
+  background: #39ade6 !important;
+}
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+  .secondary-heading {
+    font-size: 1.25rem;
+  }
+}
+
+/* nav {
   background-color: #403939;
   border-bottom: 10px solid #40c0ff;
   padding: 0 !important;
@@ -42,9 +69,8 @@ nav img {
 .col-sm-12 .container-fluid {
   margin-top: 3vw;
   width: 60%;
-  /* height: 70vh; */
   background: #fff;
-  box-shadow: 0px 5px 36px #00000029;
+  
   border-bottom: 10px solid #40c0ff;
 }
 
@@ -213,4 +239,4 @@ nav img {
 
     font-size: 3.5vw;
   }
-}
+} */
