@@ -39,13 +39,8 @@ body {
   text-align: center;
   padding-bottom: 2%;
   margin-bottom: 2%;
-<<<<<<< HEAD
-  color: #484A4B;
-  font-size: 1.2rem;
-=======
   color: #484a4b;
   font-size: 1.3rem;
->>>>>>> a604bd30685ae96f1357bdd5fa1c74bbc3118828
   font-weight: 400;
   padding-left: 5%;
   padding-right: 5%;
@@ -62,25 +57,17 @@ body {
 
 .option {
   box-shadow: 0px 0px 10px #00000029;
-<<<<<<< HEAD
-   width: 72%; 
-  height:40px;
- margin-left: 14%;  
-=======
   width: 72%;
-  height: auto;
+  height: 40px;
   margin-left: 14%;
->>>>>>> a604bd30685ae96f1357bdd5fa1c74bbc3118828
   margin-bottom: 3%;
-  
-
 }
 
 .option_txt {
   font-weight: 400;
   /* color: #39ade6; */
   margin-top: 8%;
-  padding-top:1%; 
+  padding-top: 1%;
   text-align: center;
   font-size: 1.1rem;
 }
@@ -93,11 +80,7 @@ body {
   padding-top: 1%;
   margin-left: 1%;
   color: #39ade6;
-<<<<<<< HEAD
   height: 90%;
- 
-=======
->>>>>>> a604bd30685ae96f1357bdd5fa1c74bbc3118828
 }
 
 footer {
@@ -138,12 +121,9 @@ footer button {
 }
 
 @media only screen and (max-width: 730px) {
-<<<<<<< HEAD
   .option_txt {
     font-size: 0.8rem;
   }
-=======
->>>>>>> a604bd30685ae96f1357bdd5fa1c74bbc3118828
   .timer_sec {
     font-size: 1.5rem;
   }
