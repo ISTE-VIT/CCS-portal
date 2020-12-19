@@ -5,6 +5,8 @@
 
 body {
   background: url('../img/ccsportal_bg.png') !important;
+  font-family: 'Roboto';
+  
 }
 
 .shadow {
@@ -13,230 +15,41 @@ body {
 
 .main-heading {
   font-size: 4rem;
+  font-weight: 600;
+  text-align: left;
+letter-spacing: 0px;
+color: #484A4B;
+opacity: 1;
 }
 
 body .text-primary {
   color: #39ade6 !important;
+  font-weight: 600;
+  text-align: left;
 }
 
 .login-panel-card {
   border-bottom: 8px solid #40c0ff;
+  
+}
+
+h3 {
+  font-weight: 600;
+  color: #484A4B;
 }
 body .btn-primary {
   background: #39ade6 !important;
 }
 @media (max-width: 768px) {
   .main-heading {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    text-align: center;
   }
+ 
   .secondary-heading {
     font-size: 1.25rem;
+    text-align: center  !important;
+    
   }
 }
 
-/* nav {
-  background-color: #403939;
-  border-bottom: 10px solid #40c0ff;
-  padding: 0 !important;
-}
-
-nav img {
-  margin-top: 0;
-  top: 0;
-  width: 18rem;
-  height: auto;
-}
-
-.col-sm-12 .one {
-  margin-top: 20%;
-  margin-left: 15%;
-  font-size: 5rem;
-  letter-spacing: 0;
-  color: #484a4b;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-}
-
-.col-sm-12 .two {
-  font-size: 2.3rem;
-  margin-left: 15%;
-  letter-spacing: 0;
-  color: #484a4b;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-}
-
-.col-sm-12 .container-fluid {
-  margin-top: 3vw;
-  width: 60%;
-  background: #fff;
-  
-  border-bottom: 10px solid #40c0ff;
-}
-
-.col-sm-12 .three {
-  text-align: center;
-  padding-top: 2vw;
-  font-size: 1.5rem;
-  color: #484a4b;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  margin-bottom: 8%;
-}
-
-.col-sm-12 input {
-  margin-left: 9%;
-  width: 85%;
-  height: 5vh;
-
-  border: 2px solid #cdcece;
-  border-radius: 3px;
-}
-::placeholder {
-  color: grey;
-}
-
-#regno {
-  margin-bottom: 3%;
-}
-
-#pass {
-  margin-bottom: 5%;
-}
-
-.col-sm-12 button {
-  margin-left: 35.5%;
-
-  width: 8vw;
-  height: 5vh;
-  background: #39ade6 0% 0%;
-  border-radius: 10px;
-  border: 1px;
-  color: white;
-  text-align: center;
-
-  font-size: 1vw;
-}
-
-.col-sm-12 .four {
-  text-align: center;
-  font-size: 1rem;
-  color: #1887bd;
-  font-family: 'Roboto', sans-serif;
-}
-
-.col-sm-12 .five {
-  text-align: center;
-  font-size: 1.7rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  color: #484a4b;
-}
-
-@media only screen and (max-width: 980px) {
-  .col-sm-12 .one {
-    margin-top: 5%;
-    font-size: 4rem;
-    margin-left: 25%;
-  }
-
-  .col-sm-12 .two {
-    margin-left: 25%;
-    font-size: 1.5rem;
-  }
-
-  .col-sm-12 .container-fluid {
-    margin-top: 5vw;
-    width: 50%;
-    height: 68vh;
-    margin-bottom: 10%;
-    background: #fff;
-    box-shadow: 0px 5px 36px #00000029;
-  }
-
-  .col-sm-12 button {
-    margin-left: 35%;
-
-    width: 15vw;
-    height: 5vh;
-    background: #39ade6 0% 0%;
-    border-radius: 10px;
-    border: 1px;
-    color: white;
-    text-align: center;
-
-    font-size: 2vw;
-  }
-}
-
-@media only screen and (max-width: 688px) {
-  .col-sm-12 .one {
-    margin-left: 10%;
-    margin-top: 5%;
-    font-size: 4rem;
-  }
-
-  .col-sm-12 .two {
-    margin-left: 10%;
-    font-size: 1.5rem;
-  }
-
-  .col-sm-12 .container-fluid {
-    margin-top: 5vw;
-    width: 70%;
-    height: 68vh;
-    margin-bottom: 10%;
-    background: #fff;
-    box-shadow: 0px 5px 36px #00000029;
-  }
-
-  .col-sm-12 button {
-    margin-left: 40%;
-
-    width: 15vw;
-    height: 5vh;
-    background: #39ade6 0% 0%;
-    border-radius: 10px;
-    border: 1px;
-    color: white;
-    text-align: center;
-
-    font-size: 2vw;
-  }
-}
-
-@media only screen and (max-width: 612px) {
-  .col-sm-12 .one {
-    font-size: 3.5rem;
-    margin-top: 1rem;
-    margin-left: 8%;
-  }
-
-  .col-sm-12 .two {
-    font-size: 1.5rem;
-    margin-left: 8%;
-  }
-
-  .col-sm-12 .container-fluid {
-    margin-top: 5vw;
-    width: 75%;
-    height: 60vh;
-    margin-bottom: 10%;
-    background: #fff;
-    box-shadow: 0px 5px 36px #00000029;
-  }
-
-  .col-sm-12 button {
-    margin-left: 40%;
-
-    width: 15vw;
-    height: 5vh;
-    background: #39ade6 0% 0%;
-    border-radius: 10px;
-    border: 1px;
-    color: white;
-    text-align: center;
-
-    font-size: 3.5vw;
-  }
-} */

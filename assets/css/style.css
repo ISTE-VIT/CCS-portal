@@ -1,8 +1,8 @@
 body {
   font-family: 'Roboto';
   color: #484a4b !important;
-  background: url('../img/ccsportal_bg.png');
-  background-repeat: no-repeat;
+  background: url('../img/ccsportal_bg.png') !important;
+
   background-size: auto;
 }
 
