@@ -2,6 +2,7 @@ body{
   font-family: 'Roboto';
   color: #484a4b !important;
   background: url('../img/ccsportal_bg.png') !important;
+  font-size: 0.8rem;
 }
 .quiz_box {
   box-shadow: 0px 5px 36px #00000029;
@@ -12,7 +13,7 @@ body{
 
 .ques_number {
   color: #39ade6;
-  padding: 2%;
+  padding: 1%;
   padding-left: 5%;
   padding-top: 5%;
 }
@@ -41,7 +42,7 @@ body{
   padding-bottom : 2%;
   margin-bottom: 2%;
   color: #484A4B;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   padding-left : 5%;
   padding-right : 5%;
@@ -59,17 +60,20 @@ body{
 .option {
   box-shadow: 0px 0px 10px #00000029;
    width: 72%; 
-  height: auto;
+  height:40px;
  margin-left: 14%;  
   margin-bottom: 3%;
+  
+
 }
 
 .option_txt {
   font-weight: 400;
   /* color: #39ade6; */
   margin-top: 8%;
+  padding-top:1%; 
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .option_txt.selected {
   color: #39ade6;
@@ -77,14 +81,16 @@ body{
 
 .option_alph {
   display: inline;
-  margin: 2%;
+  padding-top: 1%;
+  margin-left: 1%;
   color: #39ade6;
+  height: 90%;
  
 }
 
 
 footer {
-  margin-top: 5%;
+  margin-top: 4%;
   margin-bottom: 5%;
 }
 
@@ -122,7 +128,9 @@ footer button {
 
 
 @media only screen and (max-width: 730px) {
-
+  .option_txt {
+    font-size: 0.8rem;
+  }
   .timer_sec {
     font-size: 1.5rem;
   }
