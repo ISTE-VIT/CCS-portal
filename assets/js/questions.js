@@ -13,10 +13,10 @@ let quest = []
 
 auth.onAuthStateChanged(async (user) => {
   if (user) {
-    // if ((await db.collection('Attempted').doc(user.uid).get()).exists) {
-    //   alert('Test already attempted!')
-    //   auth.signOut()
-    // }
+    if ((await db.collection('Attempted').doc(user.uid).get()).exists) {
+      alert('Test already attempted!')
+      auth.signOut()
+    }
     const timerCount = document.querySelector('.timer_sec')
     const nextButton = document.querySelector('.next_btn')
     const quiz_box = document.querySelector('.quiz_box')
