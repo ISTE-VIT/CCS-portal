@@ -11,18 +11,21 @@ let responsesBody = {
 }
 let quest = []
 
-auth.onAuthStateChanged((user) => {
+auth.onAuthStateChanged(async (user) => {
   if (user) {
-    const option_list = document.querySelector('.option_list')
+    // if ((await db.collection('Attempted').doc(user.uid).get()).exists) {
+    //   alert('Test already attempted!')
+    //   auth.signOut()
+    // }
     const timerCount = document.querySelector('.timer_sec')
     const nextButton = document.querySelector('.next_btn')
     const quiz_box = document.querySelector('.quiz_box')
     const que_text = document.querySelector('.que_text')
     const optionList = document.querySelector('.option_list')
-    const questionCount = document.querySelector('.question .question-count')
     const subjectiveAnswer = document.querySelector(
       '.subjective-answer textarea',
     )
+    const questionCount = document.querySelector('.question .question-count')
     // var que_count = 0
 
     // showQuestions(0)
@@ -84,7 +87,7 @@ auth.onAuthStateChanged((user) => {
               id: questionBody.id,
               response,
             })
-            console.log(responsesBody)
+            // console.log(responsesBody)
             deselectOptions()
             nextButton.removeEventListener(
               'click',
@@ -106,7 +109,7 @@ auth.onAuthStateChanged((user) => {
               'click',
               manageCurrentNonAptitudeResponse,
             )
-            console.log(responsesBody)
+            // console.log(responsesBody)
             showQuestion(index + 1)
           }
           nextButton.addEventListener('click', manageCurrentNonAptitudeResponse)
@@ -114,7 +117,10 @@ auth.onAuthStateChanged((user) => {
       }
     }
 
-    document.querySelector('.end_button').addEventListener('click', finishExam)
+    document.querySelector('.end_button').addEventListener('click', () => {
+      nextButton.click()
+      finishExam()
+    })
     const startTest = () => {
       showQuestion(0)
     }
@@ -147,8 +153,7 @@ auth.onAuthStateChanged((user) => {
               })
             })
           })
-        console.log(quest)
-        console.log('starting test')
+        document.querySelector('.loader').style.display = 'none'
         startTest()
       } catch (e) {
         console.log(e)

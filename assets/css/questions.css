@@ -1,11 +1,11 @@
-body{
+body {
   font-family: 'Roboto';
   color: #484a4b !important;
   background: url('../img/ccsportal_bg.png') !important;
 }
 .quiz_box {
   box-shadow: 0px 5px 36px #00000029;
-  margin-top: 4%; 
+  margin-top: 4%;
   background-color: #fff;
   border-bottom: 8px solid #40c0ff;
 }
@@ -21,7 +21,6 @@ body{
   display: inline;
   font-size: 2rem;
   font-weight: bold;
-
 }
 
 .timer_sec {
@@ -30,21 +29,20 @@ body{
   background: #fff;
   border-radius: 1rem;
   font-size: 1.7rem;
- float: right !important;
+  float: right !important;
   padding-right: 5%;
-  font-weight:400;
-
+  font-weight: 400;
 }
 
 .que_text {
   text-align: center;
-  padding-bottom : 2%;
+  padding-bottom: 2%;
   margin-bottom: 2%;
-  color: #484A4B;
+  color: #484a4b;
   font-size: 1.3rem;
   font-weight: 400;
-  padding-left : 5%;
-  padding-right : 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .que_text span {
@@ -58,9 +56,9 @@ body{
 
 .option {
   box-shadow: 0px 0px 10px #00000029;
-   width: 72%; 
+  width: 72%;
   height: auto;
- margin-left: 14%;  
+  margin-left: 14%;
   margin-bottom: 3%;
 }
 
@@ -79,9 +77,7 @@ body{
   display: inline;
   margin: 2%;
   color: #39ade6;
- 
 }
-
 
 footer {
   margin-top: 5%;
@@ -96,7 +92,7 @@ footer button {
 }
 .end_button {
   background: #fc4e4e !important;
-  
+
   /* margin-left: 18%; */
 }
 
@@ -120,9 +116,7 @@ footer button {
   border-bottom: 10px solid #40c0ff;
 }
 
-
 @media only screen and (max-width: 730px) {
-
   .timer_sec {
     font-size: 1.5rem;
   }
@@ -138,27 +132,19 @@ footer button {
   .option_txt {
     font-size: 1.2rem;
   }
-
- 
 }
 
 @media only screen and (max-width: 630px) {
-   
-  .que_text{
+  .que_text {
     font-size: 1rem;
   }
   footer button {
-   
     font-size: 1rem !important;
   }
-  
 }
 
-
 @media only screen and (max-width: 500px) {
-  
   .timer_sec {
-   
     font-size: 1.3rem;
   }
 
@@ -174,13 +160,9 @@ footer button {
     font-size: 1rem;
   }
   footer button {
-   
     font-size: 1rem !important;
   }
- 
 }
-
-
 
 @media only screen and (max-width: 400px) {
   .timer_sec {
@@ -192,7 +174,7 @@ footer button {
   .question {
     font-size: 1.3rem;
   }
-  
+
   .que_text span {
     font-size: 0.8rem;
   }
@@ -202,7 +184,6 @@ footer button {
   }
 
   footer button {
-   
     font-size: 0.8rem !important;
   }
 }
@@ -214,3 +195,29 @@ footer button {
   width: 100%;
 }
 
+.loader {
+  position: relative;
+  text-align: center;
+  margin: 15px auto 35px auto;
+  z-index: 9999;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #39ade6;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
