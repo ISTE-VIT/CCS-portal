@@ -81,7 +81,7 @@ auth.onAuthStateChanged((user) => {
             const response = getSelectedOption()
             // console.log(questionBody.domain)
             responsesBody[questionBody.domain].push({
-              ...questionBody,
+              id: questionBody.id,
               response,
             })
             console.log(responsesBody)
@@ -99,7 +99,7 @@ auth.onAuthStateChanged((user) => {
           timerCount.innerText = 'No Time Limit'
           const manageCurrentNonAptitudeResponse = () => {
             responsesBody[questionBody.domain].push({
-              ...questionBody,
+              id: questionBody.id,
               response: subjectiveAnswer.value,
             })
             nextButton.removeEventListener(
