@@ -4,7 +4,7 @@ firebase.auth().onAuthStateChanged(async (user) => {
     console.log(user.uid)
     const doc = await db.collection('Users').doc(user.uid).get()
     if (doc.exists) {
-      window.location.href = './instructions.html'
+      window.location.href = './instruction.html'
     }
   }
 })
